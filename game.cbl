@@ -2,5 +2,9 @@
       * Cobol game
        PROGRAM-ID. cobolgame.
        PROCEDURE DIVISION.
-       DISPLAY "Hello, world!"
+       CALL "initscr".
+       CALL "printw" USING "Hello, world!".
+       CALL "refresh".
+       CALL "getch".
+       CALL "endwin".
        STOP RUN.
